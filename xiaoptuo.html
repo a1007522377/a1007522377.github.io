@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小普陀</title>
+		<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;
+		margin-top: 20px;	
+		}
+		#zi{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+			margin-top: -180px;
+		}
+		#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan.html">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/xpt1.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+		
+	
+	<div id="zi">
+		<p>
+			小普陀岛周长只有200多米，全由石灰岩构成。小普陀岛的形状很像一颗圆形的印章，因此又叫海印；传说洱海里面蛟龙很多，常常掀起狂风恶浪，这块礁石就是观音菩萨用来镇住蛟龙的大印。大概是在明朝崇祯年间，附近的渔民捐资在小普陀上修建了一座两层歇山顶的楼阁 ，在里面供奉了观音菩萨的塑像，因此老百姓就称它为观音阁。
+
+  船慢慢行驶靠岸。
+			<img src="image/xpt8.jpg">
+		</p>
+	</div>
+	<div id="big">
+		<script type="text/javascript">
+	var c="xpt1";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "xpt1":
+			c="xpt3";
+
+			break;
+
+			case "xpt3":
+			c="xpt6";
+
+			break;
+
+
+			case "xpt6":
+			c="xpt1";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+		
+		<img src="image/xpt7.jpg"><br>
+	</div>
+	
+</body>
+</html>

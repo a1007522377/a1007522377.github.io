@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>张家花园</title>
+		<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;	
+		margin-top: 20px;
+		}
+		#zi{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+			margin-top: -180px;
+		}
+			#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/zjhy2.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+	<div id="zi">
+		<p>
+			 大理张家花园是2008年3月才开辟的景点，彩云之南的梦幻茶花民居 她被山茶花、杜鹃花和十八溪水倾注的洱海母亲湖所环绕，背靠苍山的鲜花、龙胆、高河菜，被所有来过的人称为“云南第一园”和“梦幻白族民居”，也是“惊奇、神奇、激动”的代名词，颈上绣满花环穿着绣着山茶和杜鹃的服饰，白里透红的白族人能歌善舞，吸引了世界上向往大理彩云追月的梦幻人，当洱海清澈的水从金色点染的一刻到金梭射向点苍山的彩云时，阳光也就慵懒地撒遍了张家花园这座东方“梦幻民居”。
+
+		</p>
+	</div>
+	<div id="big">
+		<script type="text/javascript">
+	var c="zjhy2";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "zjhy2":
+			c="zjhy3";
+
+			break;
+
+			case "zjhy3":
+			c="zjhy4";
+
+			break;
+
+
+			case "zjhy4":
+			c="zjhy2";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+
+		<br>
+		<img src="image/zjhy10.jpg"><br>
+		<img src="image/zjhy13.jpg">
+	</div>
+	
+</body>
+</html>

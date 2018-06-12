@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>花海</title>
+	<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;	
+		}
+		#zi1{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+			margin-top: -220px;
+		}
+		#zi2{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+			margin-top: 20px;
+		}
+		#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan.html">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/hh001.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+	<div id="zi1">
+		<p>
+			 来到 大理 <br>
+必须去的一个古城边上的云上花海<br>
+根本无法想象这么密集的房屋之间真的有这么个世外 桃源 <br>
+在小巷子里面走来绕去<br>
+突然间眼前豁然开朗<br>
+一大片一大片的花海呈现在眼前<br>
+
+		</p><br>
+		<img src="image/hh8.jpg">
+		<img src="image/hh0011.jpg">
+
+	</div>
+<div id="zi2">
+	<p>
+		<br>这么大的花海，那么多的荷花、睡莲池！<br>
+还有大片大片的红菊、黄菊、白菊、硫磺菊！<br>
+更有金鱼草海、格桑花海、马鞭草海、 大理 花海、小丽花海、花菱草海、飞燕草海、翠蝶花海、高雪伦花海、绒球花海！<br>
+
+哇塞！！！你之前去过的薰衣草花海弱爆了有不有！<br>
+你之前去过的郁金香花海弱爆了有不有！<br>
+你之前去过的玫瑰花海弱爆了有不有！<br>
+
+不服！来辩！<br>
+以下美图太多，全是低分辨率的，想要做屏保？赶快约起你呢小伙伴去现场看个够吧！这里还不光是看看的哦，没有个把小时你别出来！<br>
+	</p>
+</div>
+
+	<div id="big">
+		<script type="text/javascript">
+	var c="hh001";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "hh001":
+			c="hh003";
+
+			break;
+
+			case "hh003":
+			c="hh005";
+
+			break;
+
+
+			case "hh005":
+			c="hh001";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+
+		<img src="image/hh008.jpg"><br>
+		<img src="image/hh009.jpg">
+	</div>
+	
+</body>
+</html>

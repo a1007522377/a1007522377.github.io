@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>银器</title>
+		<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;
+		margin-top: 20px;	
+		}
+		#zi{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+		}
+		#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan.html">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/yq8.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+	<div id="zi">
+		<p>
+			银器，是指金属银制成的器具。纯度愈高，银色愈洁白，首饰表面看上去均匀发亮，有润色。
+		</p>
+	</div>
+	<div id="big">
+		<script type="text/javascript">
+	var c="yq8";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "yq8":
+			c="yq9";
+
+			break;
+
+			case "yq9":
+			c="yq41";
+
+			break;
+
+
+			case "yq41":
+			c="yq8";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+
+		<img src="image/yingqi10.jpg"><br>
+		<img src="image/shopping2.jpg">
+	</div>
+	
+</body>
+</html>

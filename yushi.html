@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>玉石</title>
+		<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;	
+		margin-top: 20px;
+		}
+		#zi{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+		}
+			#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan.html">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/yushi3.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+	<div id="zi">
+		<p>
+			在各种玉器首饰中，产量最大、用玉料最多的是玉镯，单件玉器价值最高的也是玉镯。有经验的玉雕师都知道，当一片玉料没有裂纹而能用来做玉镯时，首先一定力争加工成玉镯。只有在玉片上裂纹很多，无法取材琢磨玉镯时，才用以加工成儿童手镯或鸡心、玉扣等小挂件，因而玉镯当之无愧地被称为玉器首饰的“皇后”。
+		</p>
+	</div>
+	<div id="big">
+		<script type="text/javascript">
+	var c="ys3";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "ys3":
+			c="ys4";
+
+			break;
+
+			case "ys4":
+			c="ys5";
+
+			break;
+
+
+			case "ys5":
+			c="ys6";
+
+			break;
+
+			case "ys6":
+			c="ys3";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+
+		<img src="image/yushi1.jpg"><br>
+		<img src="image/yushi2.jpg">
+	</div>
+	
+</body>
+</html>

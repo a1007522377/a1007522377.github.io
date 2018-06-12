@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天龙洞</title>
+		<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;	
+		margin-top: 20px;
+		}
+		#zi{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+			margin-top: -180px;
+		}
+		#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan.html">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/tld7.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+		
+	
+	<div id="zi">
+		<p>
+			天龙洞属大理新开发的溶洞，位于蝴蝶泉北两公里处的214国道边。走入洞内，石花、石笋、石柱、石台等，形态各异，如狮蹲、虎踞、猿攀、资态万千，栩栩如生。继续往里走，洞境险峻幽深，怪石嶙峋，令人目不暇接。
+整个旅游风景区由四部分组成：满族民俗风情游、龙洞惊奇探游、龙山攀崖拾趣游、河湾戏水碧洲游。天龙洞属大理新开发的溶洞，走入洞内，石花、石笋、石柱、石台等，形态各异，如狮蹲、虎踞、猿攀、资态万千，栩栩如生。继续往里走，洞境险峻幽深，怪石嶙峋，令人目不暇接.
+
+			<img src="image/tld001.jpg">
+		</p>
+	</div>
+	<div id="big">
+		<script type="text/javascript">
+	var c="tld7";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "tld7":
+			c="tld8";
+
+			break;
+
+			case "tld8":
+			c="tld33";
+
+			break;
+
+
+			case "tld33":
+			c="tld7";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+		
+		<img src="image/tld12.jpg"><br>
+	</div>
+	
+</body>
+</html>

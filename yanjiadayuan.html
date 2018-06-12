@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>严家大院</title>
+		<script type="text/javascript">
+	document.addEventListenter("plusready",function(){
+		plus.key.addEventListenter('backbutton',function(){
+			window.history.back();
+		}.false);
+	});
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: auto;
+			height: auto;
+		}
+		img{
+			width: 450px;
+			height: auto;
+		}
+		#big{
+		display: block;
+		text-align: center;
+		}
+		#div12{
+		display: block;
+		text-align: center;	
+		height: 497px;	
+		margin-top: 20px;
+		}
+		#zi{
+			overflow: hidden;
+			width: 450px;
+			margin: auto;
+			margin-top: -180px;
+			margin-top: -180px;
+		}
+		#title{
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	li{
+		display:inline-block;
+
+	}
+	</style>
+</head>
+<body>
+		<div id="title">
+		<ul>
+			<li><a href="huahai.html">花海</a></li>
+			<li><a href="zhangjiahuayuan.html">张家花园</a></li>
+			<li><a href="tianlongdong.html">天龙洞</a></li>
+			<li><a href="yanjiadayuan.html">严家大院</a></li>
+			<li><a href="yushi.html">玉石</a></li>
+			<li><a href="yingqi.html">银器</a></li>
+		</ul>
+	</div>
+	<div id="div12">
+		<ul>
+		<li style="display:block"><img src="image/yjdy10.jpg"id="img1"></li>
+		</ul>
+		<br><br><br>
+	</div>
+		
+	
+	<div id="zi">
+		<p>
+			白族民居的景点。在里面可以品尝三道茶：苦茶、甜茶、回味茶，是白族迎客的礼仪。边饮茶，还可以边看表演，了解白族的一些民俗文化。虽然演员并非很专业，但这样小规模的演出也能达到一定效果。建筑风格值得一看，尤其是上面的彩画、装饰。<br>
+
+			<img src="image/yjdy11.jpg">
+		</p>
+	</div>
+	<div id="big">
+		<script type="text/javascript">
+	var c="yjdy10";
+function a1(){
+	var i=document.getElementById("img1");
+	switch(c){
+			case "yjdy10":
+			c="yjdy3";
+
+			break;
+
+			case "yjdy3":
+			c="yjdy4";
+
+			break;
+
+
+			case "yjdy4":
+			c="yjdy10";
+
+			break;
+	}
+
+	i.src="image/"+c+".jpg";
+	console.log(i.src);
+};
+	setInterval("a1()",2000);
+
+</script>
+		<br>
+		<img src="image/yjdy6.jpg"><br>
+	</div>
+	
+</body>
+</html>
